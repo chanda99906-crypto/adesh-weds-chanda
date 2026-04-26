@@ -7,6 +7,7 @@ const heroImage = new URL("./assets/opening.jpg", import.meta.url).href;
 const haldiImage = new URL("./assets/haldi.jpg", import.meta.url).href;
 const mehendiImage = new URL("./assets/mehandi.jpg", import.meta.url).href;
 const weddingImage = new URL("./assets/wedding.jpg", import.meta.url).href;
+
 const eventImages = [
   {
     title: "Haldi",
@@ -80,32 +81,6 @@ function Icon(IconComponent, className = "", size = 19) {
   return h(IconComponent, { className, size, strokeWidth: 1.7 });
 }
 
-function WhatsAppIcon() {
-  return h(
-    "svg",
-    { viewBox: "0 0 32 32", className: "h-5 w-5", fill: "currentColor", "aria-hidden": "true" },
-    h("path", {
-      d: "M16.02 3.2A12.62 12.62 0 0 0 5.1 22.14L3.4 28.8l6.82-1.6A12.61 12.61 0 1 0 16.02 3.2Zm0 22.9c-2.02 0-3.9-.58-5.5-1.6l-.39-.24-4.04.95 1-3.93-.25-.4a10.31 10.31 0 1 1 9.18 5.22Zm5.86-7.72c-.32-.16-1.9-.94-2.2-1.04-.3-.11-.52-.16-.73.16-.22.32-.84 1.04-1.03 1.26-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.58-.95-.85-1.6-1.9-1.78-2.22-.18-.32-.02-.49.14-.65.14-.14.32-.38.49-.57.16-.19.22-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.73-1.76-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.22 0-.57.08-.86.41-.3.32-1.14 1.11-1.14 2.71 0 1.6 1.17 3.15 1.33 3.37.16.22 2.3 3.52 5.57 4.93.78.34 1.38.54 1.86.69.78.25 1.49.21 2.05.13.63-.09 1.9-.78 2.17-1.53.27-.76.27-1.41.19-1.54-.08-.14-.3-.22-.62-.38Z",
-    })
-  );
-}
-
-function Eyebrow({ children }) {
-  return h(
-    "p",
-    { className: "font-label text-[0.68rem] font-medium uppercase tracking-[0.32em] text-gold" },
-    children
-  );
-}
-
-function Section({ id, children, className = "" }) {
-  return h(
-    "section",
-    { id, className: `relative px-5 py-16 ${className}` },
-    h("div", { className: "mx-auto w-full" }, children)
-  );
-}
-
 function FlyingBird({ className = "" }) {
   return h(
     "div",
@@ -138,6 +113,32 @@ function FlyingBird({ className = "" }) {
   );
 }
 
+function WhatsAppIcon() {
+  return h(
+    "svg",
+    { viewBox: "0 0 32 32", className: "h-5 w-5", fill: "currentColor", "aria-hidden": "true" },
+    h("path", {
+      d: "M16.02 3.2A12.62 12.62 0 0 0 5.1 22.14L3.4 28.8l6.82-1.6A12.61 12.61 0 1 0 16.02 3.2Zm0 22.9c-2.02 0-3.9-.58-5.5-1.6l-.39-.24-4.04.95 1-3.93-.25-.4a10.31 10.31 0 1 1 9.18 5.22Zm5.86-7.72c-.32-.16-1.9-.94-2.2-1.04-.3-.11-.52-.16-.73.16-.22.32-.84 1.04-1.03 1.26-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.58-.95-.85-1.6-1.9-1.78-2.22-.18-.32-.02-.49.14-.65.14-.14.32-.38.49-.57.16-.19.22-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.73-1.76-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.22 0-.57.08-.86.41-.3.32-1.14 1.11-1.14 2.71 0 1.6 1.17 3.15 1.33 3.37.16.22 2.3 3.52 5.57 4.93.78.34 1.38.54 1.86.69.78.25 1.49.21 2.05.13.63-.09 1.9-.78 2.17-1.53.27-.76.27-1.41.19-1.54-.08-.14-.3-.22-.62-.38Z",
+    })
+  );
+}
+
+function Eyebrow({ children }) {
+  return h(
+    "p",
+    { className: "font-label text-[0.68rem] font-medium uppercase tracking-[0.32em] text-gold" },
+    children
+  );
+}
+
+function Section({ id, children, className = "" }) {
+  return h(
+    "section",
+    { id, className: `relative px-5 py-16 ${className}` },
+    h("div", { className: "mx-auto w-full" }, children)
+  );
+}
+
 function Hero() {
   return h(
     "header",
@@ -158,7 +159,7 @@ function Hero() {
         "nav",
         { className: "mx-auto flex items-center justify-between font-label text-[0.65rem] font-medium uppercase tracking-[0.22em] text-espresso" },
         h("a", { href: "#invitation", className: "transition-colors hover:text-gold" }, "Story"),
-      h("span", { className: "font-display text-lg font-light italic normal-case tracking-normal text-maroon" }, "A & C"),
+        h("span", { className: "font-display text-lg font-light italic normal-case tracking-normal text-maroon" }, "A & C"),
         h("a", { href: "#rsvp", className: "transition-colors hover:text-gold" }, "RSVP")
       )
     ),
@@ -260,6 +261,42 @@ function Countdown() {
   );
 }
 
+function EventImageSections() {
+  return h(
+    Section,
+    { id: "celebrations", className: "bg-ivory text-espresso" },
+    h(
+      "div",
+      { className: "grid gap-5" },
+      eventImages.map((event) =>
+        h(
+          "article",
+          {
+            key: event.title,
+            className:
+              "relative min-h-[100svh] overflow-hidden rounded-lg border border-gold/25 bg-ivory shadow-luxury",
+          },
+          h("img", {
+            src: event.image,
+            alt: `${event.title} celebration artwork`,
+            className:
+              "absolute inset-0 h-full w-full object-cover object-center",
+          }),
+          h("div", { className: "absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-ivory/95 via-ivory/72 to-transparent" }),
+          h(
+            "div",
+            { className: `relative z-10 px-7 text-center ${event.offset}` },
+            h(Eyebrow, null, event.date),
+            h("h3", { className: "mt-2 font-display text-5xl font-light leading-none text-maroon" }, event.title),
+            h("div", { className: "mx-auto mt-3 h-px w-24 bg-gradient-to-r from-transparent via-gold to-transparent" }),
+            h("p", { className: "mx-auto mt-0 max-w-[15rem] font-body text-lg italic leading-6 text-text-mid" }, event.time)
+          )
+        )
+      )
+    )
+  );
+}
+
 function Events() {
   return h(
     Section,
@@ -306,42 +343,6 @@ function Events() {
             },
             Icon(MapPin, "", 14),
             "Get Directions"
-          )
-        )
-      )
-    )
-  );
-}
-
-function EventImageSections() {
-  return h(
-    Section,
-    { id: "celebrations", className: "bg-ivory text-espresso" },
-    h(
-      "div",
-      { className: "grid gap-5" },
-      eventImages.map((event) =>
-        h(
-          "article",
-          {
-            key: event.title,
-            className:
-              "relative min-h-[100svh] overflow-hidden rounded-lg border border-gold/25 bg-ivory shadow-luxury",
-          },
-          h("img", {
-            src: event.image,
-            alt: `${event.title} celebration artwork`,
-            className:
-              "absolute inset-0 h-full w-full object-cover object-center",
-          }),
-          h("div", { className: "absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-ivory/95 via-ivory/72 to-transparent" }),
-          h(
-            "div",
-            { className: `relative z-10 px-7 text-center ${event.offset}` },
-            h(Eyebrow, null, event.date),
-            h("h3", { className: "mt-2 font-display text-5xl font-light leading-none text-maroon" }, event.title),
-            h("div", { className: "mx-auto mt-3 h-px w-24 bg-gradient-to-r from-transparent via-gold to-transparent" }),
-            h("p", { className: "mx-auto mt-0 max-w-[15rem] font-body text-lg italic leading-6 text-text-mid" }, event.time)
           )
         )
       )
