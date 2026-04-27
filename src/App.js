@@ -82,7 +82,7 @@ const eventDetails = [
   {
     title: "The Wedding Ceremony",
     date: "Saturday, 27 June · 8:30 PM",
-    address: ["UK AURA by VR2H", "Main Gate, Wave City Marg, Sadiqpur, Kajipura", "Ghaziabad, Uttar Pradesh 201015"],
+    address: ["UK AURA by VR2H", "Main Gate, Wave City Marg, Sadiqpur, Kajipura, Ghaziabad, Uttar Pradesh 201015"],
     accent: "maroon",
     directions: "https://www.google.com/maps/search/?api=1&query=UK%20AURA%20by%20VR2H%20Ghaziabad",
   },
@@ -263,10 +263,10 @@ function MusicPlayer() {
         type: "button",
         onClick: toggleMusic,
         className:
-          "fixed bottom-5 right-5 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-gold/60 bg-ivory/90 text-maroon shadow-luxury backdrop-blur-sm transition duration-300 hover:bg-gold hover:text-espresso",
+          "fixed bottom-5 right-5 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-gold/35 bg-ivory/70 text-maroon/70 shadow-[0_10px_30px_rgba(44,24,16,0.08)] backdrop-blur-md transition duration-300 hover:bg-ivory hover:text-maroon",
         "aria-label": isPlaying ? "Pause music" : "Play music",
       },
-      isPlaying ? Icon(Volume2, "", 20) : Icon(VolumeX, "", 20)
+      isPlaying ? Icon(Volume2, "", 17) : Icon(VolumeX, "", 17)
     )
   );
 }
@@ -352,7 +352,7 @@ function Countdown() {
         h("span", null, "Mins"),
         h("span", null, "Secs")
       ),
-      h("p", { className: "mt-12 font-label text-[0.68rem] uppercase tracking-[0.26em] text-text-mid" }, "Saturday · 8:30 PM IST")
+      h("p", { className: "mt-12 font-label text-[0.68rem] uppercase tracking-[0.26em] text-text-mid" }, "27th June · Saturday · 8:30 PM")
     )
   );
 }
@@ -387,12 +387,12 @@ function CoupleGallery() {
           alt: activePhoto.title,
           className: `gallery-feature h-full w-full object-cover ${activePhoto.position}`,
         }),
-        h("div", { className: "absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-espresso/75 via-espresso/24 to-transparent" }),
+        h("div", { className: "absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-espresso/70 via-espresso/20 to-transparent" }),
         h(
           "div",
           { className: "absolute bottom-5 left-5 right-5 text-left text-ivory" },
-          h("p", { className: "font-display text-3xl font-light leading-none" }, activePhoto.title),
-          h("p", { className: "mt-2 font-body text-base italic leading-6 text-ivory" }, activePhoto.caption)
+          h("p", { className: "font-display text-[1.65rem] font-light leading-none" }, activePhoto.title),
+          h("p", { className: "mt-1.5 font-body text-[0.95rem] italic leading-5 text-ivory" }, activePhoto.caption)
         )
       ),
       h(
@@ -481,17 +481,17 @@ function Events() {
           "article",
           {
             key: event.title,
-            className: `rounded-[8px] border-l-2 ${event.accent === "maroon" ? "border-gold" : "border-gold"} bg-[#FAF6EF] px-6 py-7 text-left shadow-luxury`,
+            className: "rounded-[8px] border border-[#c9a84c]/15 border-l-2 border-l-[#c9a84c] bg-[#FAF6EF] px-7 py-8 text-left shadow-[0_18px_45px_rgba(44,24,16,0.08)]",
           },
           h(
             "div",
-            { className: "flex flex-col gap-2" },
+            { className: "flex flex-col gap-3" },
             h("h3", { className: "font-label text-sm font-medium uppercase tracking-[0.24em] text-blush" }, event.title),
             h("p", { className: "font-body text-base text-gold-lt" }, event.date)
           ),
           h(
             "div",
-            { className: "mt-5 space-y-2 font-body text-lg leading-7 text-text-mid" },
+            { className: "mt-6 space-y-2.5 font-body text-lg leading-8 text-text-mid" },
             event.address.map((line) => h("p", { key: line }, line))
           ),
           h(
@@ -500,7 +500,7 @@ function Events() {
               href: event.directions,
               target: "_blank",
               rel: "noreferrer",
-              className: "mt-7 inline-flex items-center gap-2 border-b border-gold pb-1 font-label text-[0.68rem] uppercase tracking-[0.24em] text-blush",
+              className: "mt-8 inline-flex items-center gap-2 border-b border-gold/55 pb-1 font-label text-[0.68rem] uppercase tracking-[0.24em] text-blush",
             },
             Icon(MapPin, "", 14),
             "Get Directions"
