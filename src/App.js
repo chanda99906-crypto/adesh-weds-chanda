@@ -286,7 +286,7 @@ function InvitationDetails() {
           "div",
           null,
           h("p", { className: "gold-gradient-text font-signature text-5xl leading-[1.15] drop-shadow-sm" }, "Adesh"),
-          h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved son of", h("br"), "Shri Kishor Chaurasia & Smt. Maya Chaurasia")
+          h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved son of", h("br"), "Shri Shiv Kishore Chaurasia & Smt. Maya Chaurasia")
         ),
         h(
           "div",
