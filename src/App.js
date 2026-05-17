@@ -43,14 +43,14 @@ const memoryPhotos = [
 const eventImages = [
   {
     title: "Haldi",
-    date: "26 June",
+    date: "25 June",
     time: "A morning of turmeric, laughter, and golden blessings.",
     image: haldiImage,
     offset: "pt-32",
   },
   {
     title: "Mehendi",
-    date: "26 June",
+    date: "25 June",
     time: "An evening of music, intricate henna, and stories held in every palm.",
     image: mehendiImage,
     offset: "pt-56",
@@ -67,14 +67,14 @@ const eventImages = [
 const eventDetails = [
   {
     title: "Haldi Ceremony",
-    date: "Friday, 26 June · 11:00 AM",
+    date: "Thursday, 25 June · 11:00 AM",
     address: ["B-3303 Spring View Floors, Sare Homes,", "Creasant Parc, Lal Kaun, Ghaziabad 201002"],
     accent: "gold",
     directions: "https://www.google.com/maps/search/?api=1&query=28.638583,77.480361",
   },
   {
     title: "Mehandi Evening",
-    date: "Friday, 26 June · 4:00 PM",
+    date: "Thursday, 25 June · 4:00 PM",
     address: ["B-3303 Spring View Floors, Sare Homes,", "Creasant Parc, Lal Kaun, Ghaziabad 201002"],
     accent: "gold",
     directions: "https://www.google.com/maps/search/?api=1&query=28.638583,77.480361",
