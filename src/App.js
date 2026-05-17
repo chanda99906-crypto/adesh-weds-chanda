@@ -4,18 +4,18 @@ import { CalendarDays, Heart, MapPin, MessageCircle, Music, Sparkles, Volume2, V
 const h = React.createElement;
 const weddingDate = new Date("2026-06-27T20:00:00+05:30");
 const heroImage = new URL("./assets/opening.jpg", import.meta.url).href;
-const haldiImage = new URL("./assets/haldi.jpg", import.meta.url).href;
-const mehendiImage = new URL("./assets/mehandi.jpg", import.meta.url).href;
+const haldiImage = new URL("./assets/haldi-new.png", import.meta.url).href;
+const mehendiImage = new URL("./assets/mehandi-new.png", import.meta.url).href;
 const weddingImage = new URL("./assets/wedding.jpg", import.meta.url).href;
 const musicTrack = new URL("./assets/music.mp3", import.meta.url).href;
-const couplePhoto = new URL("./assets/adesh-chanda-couple.jpeg", import.meta.url).href;
+const couplePhoto = new URL("./assets/adesh-chanda-moment.jpeg", import.meta.url).href;
 const handPhoto = new URL("./assets/couple-hand.jpeg", import.meta.url).href;
 const ringsOnePhoto = new URL("./assets/couple-rings-1.jpeg", import.meta.url).href;
 const ringsTwoPhoto = new URL("./assets/couple-rings-2.jpeg", import.meta.url).href;
 
 const memoryPhotos = [
   {
-    title: "Adesh & Chanda",
+    title: "Chanda & Adesh",
     caption: "The quiet joy before forever begins.",
     image: couplePhoto,
     position: "object-center",
@@ -177,7 +177,7 @@ function Hero() {
     { className: "relative min-h-[100svh] overflow-hidden bg-ivory text-espresso" },
     h("img", {
       src: heroImage,
-      alt: "Opening wedding monogram artwork for Adesh and Chanda",
+      alt: "Opening wedding monogram artwork for Chanda and Adesh",
       className: "opening-image absolute inset-0 h-full w-full object-cover object-center",
     }),
     h("div", { className: "absolute inset-x-0 bottom-0 h-52 bg-gradient-to-t from-ivory via-ivory/55 to-transparent" }),
@@ -198,8 +198,8 @@ function Hero() {
       { className: "absolute inset-x-0 bottom-12 z-10 px-6 text-center" },
       h(
         "p",
-        { className: "opening-signature gold-gradient-text inline-block px-2 py-2 font-signature text-4xl leading-[1.35] tracking-wide" },
-        "Adesh & Chanda"
+        { className: "opening-signature gold-gradient-text inline-block px-2 py-2 font-signature text-4xl font-semibold leading-[1.35] tracking-wide" },
+        "Chanda & Adesh"
       )
     ),
     h("div", { className: "scroll-cue absolute bottom-3 left-1/2 z-10 h-10 w-px bg-gradient-to-b from-maroon/75 to-transparent" })
@@ -283,8 +283,8 @@ function InvitationDetails() {
         h(
           "div",
           null,
-          h("p", { className: "gold-gradient-text font-signature text-5xl leading-[1.15]" }, "Adesh"),
-          h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved son of", h("br"), "Shri Shiv Kishor Chaurasia & Smt. Maya Chaurasia")
+          h("p", { className: "gold-gradient-text font-signature text-5xl font-semibold leading-[1.15]" }, "Chanda"),
+          h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved daughter of", h("br"), "Shri Vijay Kumar Chaurasia & Smt. Sushila Chaurasia")
         ),
         h(
           "div",
@@ -296,8 +296,8 @@ function InvitationDetails() {
         h(
           "div",
           null,
-          h("p", { className: "gold-gradient-text font-signature text-5xl leading-[1.15]" }, "Chanda"),
-          h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved daughter of", h("br"), "Shri Vijay Kumar Chaurasia & Smt. Sushila Chaurasia"),
+          h("p", { className: "gold-gradient-text font-signature text-5xl font-semibold leading-[1.15]" }, "Adesh"),
+          h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved son of", h("br"), "Shri Shiv Kishor Chaurasia & Smt. Maya Chaurasia"),
           h("span", { className: "mx-auto mt-7 block h-px w-24 bg-[#c9a84c]/55" })
         )
       ),
@@ -378,7 +378,7 @@ function CoupleGallery() {
       { className: "reveal mt-10 overflow-hidden rounded-[8px] border border-gold/25 bg-white shadow-luxury" },
       h(
         "div",
-        { className: "relative aspect-[4/4.35] overflow-hidden bg-ivory" },
+        { className: "relative h-[clamp(340px,62svh,520px)] overflow-hidden bg-ivory" },
         h("img", {
           key: activePhoto.image,
           src: activePhoto.image,
@@ -426,14 +426,14 @@ function EventImageSections() {
     { id: "celebrations", className: "bg-ivory text-espresso" },
     h(
       "div",
-      { className: "grid gap-5" },
+      { className: "mx-auto grid max-w-[390px] gap-5" },
       eventImages.map((event) =>
         h(
           "article",
           {
             key: event.title,
             className:
-              "relative min-h-[100svh] overflow-hidden rounded-[8px] border border-gold/25 bg-ivory shadow-luxury",
+              "relative h-[680px] overflow-hidden rounded-[8px] border border-gold/25 bg-ivory shadow-luxury",
           },
           h("img", {
             src: event.image,
@@ -510,7 +510,7 @@ function Events() {
 }
 
 function RSVP() {
-  const message = encodeURIComponent("Namaste, I would love to RSVP for Adesh & Chanda's wedding celebrations.");
+  const message = encodeURIComponent("Namaste, I would love to RSVP for Chanda & Adesh's wedding celebrations.");
 
   return h(
     Section,
@@ -540,7 +540,7 @@ function Footer() {
   return h(
     "footer",
     { className: "text-cascade bg-ivory px-5 py-12 text-center sm:px-8" },
-    h("p", { className: "gold-gradient-text font-signature text-4xl leading-[1.2]" }, "Adesh & Chanda"),
+    h("p", { className: "gold-gradient-text font-signature text-4xl font-semibold leading-[1.2]" }, "Chanda & Adesh"),
     h(
       "div",
       { className: "mx-auto mt-4 flex w-44 items-center justify-center gap-3 text-gold" },

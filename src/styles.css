@@ -7,7 +7,7 @@
   --gold: #c9a84c;
   --gold-lt: #b8941f;
   --blush: #3f7450;
-  --text-mid: #294438;
+  --text-mid: #4f6b5c;
   color: var(--text-mid);
   background: #faf6ef;
   font-synthesis: none;
@@ -69,6 +69,8 @@ a {
   background: linear-gradient(115deg, #6f4305 0%, #a86f08 27%, #d69615 52%, #9a6507 76%, #573503 100%);
   -webkit-background-clip: text;
   background-clip: text;
+  font-weight: 600;
+  -webkit-text-stroke: 0.25px rgba(111, 67, 5, 0.7);
 }
 
 .text-ivory {
