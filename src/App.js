@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { CalendarDays, Heart, MapPin, MessageCircle, Music, Sparkles, Volume2, VolumeX } from "lucide-react";
 
 const h = React.createElement;
-const weddingDate = new Date("2026-06-27T19:00:00+05:30");
+const weddingDate = new Date("2026-06-27T20:00:00+05:30");
 const heroImage = new URL("./assets/opening.jpg", import.meta.url).href;
 const haldiImage = new URL("./assets/haldi.jpg", import.meta.url).href;
 const mehendiImage = new URL("./assets/mehandi.jpg", import.meta.url).href;
@@ -43,7 +43,7 @@ const memoryPhotos = [
 const eventImages = [
   {
     title: "Haldi",
-    date: "25 June",
+    date: "26 June",
     time: "A morning of turmeric, laughter, and golden blessings.",
     image: haldiImage,
     offset: "pt-32",
@@ -67,21 +67,21 @@ const eventImages = [
 const eventDetails = [
   {
     title: "Haldi Ceremony",
-    date: "Thursday, 25 June · 4:00 PM",
+    date: "Friday, 26 June · 11:00 AM",
     address: ["B-3303 Spring View Floors, Sare Homes,", "Creasant Parc, Lal Kaun, Ghaziabad 201002"],
     accent: "gold",
     directions: "https://www.google.com/maps/search/?api=1&query=28.638583,77.480361",
   },
   {
     title: "Mehandi Evening",
-    date: "Friday, 26 June · 6:00 PM",
+    date: "Friday, 26 June · 4:00 PM",
     address: ["B-3303 Spring View Floors, Sare Homes,", "Creasant Parc, Lal Kaun, Ghaziabad 201002"],
     accent: "gold",
     directions: "https://www.google.com/maps/search/?api=1&query=28.638583,77.480361",
   },
   {
     title: "The Wedding Ceremony",
-    date: "Saturday, 27 June · 8:30 PM",
+    date: "Saturday, 27 June · 8:00 PM",
     address: ["UK AURA by VR2H", "Main Gate, Wave City Marg, Sadiqpur, Kajipura, Ghaziabad, Uttar Pradesh 201015"],
     accent: "maroon",
     directions: "https://www.google.com/maps/search/?api=1&query=UK%20AURA%20by%20VR2H%20Ghaziabad",
@@ -189,10 +189,8 @@ function Hero() {
       { className: "absolute inset-x-0 top-0 z-10 px-5 py-6 sm:px-8" },
       h(
         "nav",
-        { className: "mx-auto flex items-center justify-between font-label text-[0.65rem] font-medium uppercase tracking-[0.22em] text-espresso" },
-        h("a", { href: "#invitation", className: "transition-colors hover:text-gold" }, "Story"),
-        h("span", { className: "font-display text-lg font-light italic normal-case tracking-normal text-maroon" }, "A & C"),
-        h("a", { href: "#rsvp", className: "transition-colors hover:text-gold" }, "RSVP")
+        { className: "mx-auto flex items-center justify-center font-body text-base font-normal tracking-[0.03em] text-maroon" },
+        h("span", null, "॥ ॐ गणेशाय नमः ॥")
       )
     ),
     h(
@@ -352,7 +350,7 @@ function Countdown() {
         h("span", null, "Mins"),
         h("span", null, "Secs")
       ),
-      h("p", { className: "mt-12 font-label text-[0.68rem] uppercase tracking-[0.26em] text-text-mid" }, "27th June · Saturday · 8:30 PM")
+      h("p", { className: "mt-12 font-label text-[0.68rem] uppercase tracking-[0.26em] text-text-mid" }, "27th June · Saturday · 8:00 PM")
     )
   );
 }
