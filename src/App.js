@@ -283,7 +283,7 @@ function InvitationDetails() {
         h(
           "div",
           null,
-          h("p", { className: "gold-gradient-text font-signature text-5xl leading-[1.15] drop-shadow-sm" }, "Adesh"),
+          h("p", { className: "gold-gradient-text font-signature text-5xl leading-[1.15]" }, "Adesh"),
           h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved son of", h("br"), "Shri Shiv Kishor Chaurasia & Smt. Maya Chaurasia")
         ),
         h(
@@ -296,7 +296,7 @@ function InvitationDetails() {
         h(
           "div",
           null,
-          h("p", { className: "gold-gradient-text font-signature text-5xl leading-[1.15] drop-shadow-sm" }, "Chanda"),
+          h("p", { className: "gold-gradient-text font-signature text-5xl leading-[1.15]" }, "Chanda"),
           h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved daughter of", h("br"), "Shri Vijay Kumar Chaurasia & Smt. Sushila Chaurasia"),
           h("span", { className: "mx-auto mt-7 block h-px w-24 bg-[#c9a84c]/55" })
         )
