@@ -261,7 +261,7 @@ function MusicPlayer() {
         type: "button",
         onClick: toggleMusic,
         className:
-          "fixed bottom-5 right-5 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-gold/35 bg-ivory/70 text-maroon/70 shadow-[0_10px_30px_rgba(44,24,16,0.08)] backdrop-blur-md transition duration-300 hover:bg-ivory hover:text-maroon",
+          "fixed bottom-5 right-5 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-gold/35 bg-ivory/70 text-maroon/70 shadow-[0_10px_30px_rgba(20,43,32,0.08)] backdrop-blur-md transition duration-300 hover:bg-ivory hover:text-maroon",
         "aria-label": isPlaying ? "Pause music" : "Play music",
       },
       isPlaying ? Icon(Volume2, "", 17) : Icon(VolumeX, "", 17)
@@ -325,19 +325,19 @@ function Countdown() {
 
   return h(
     Section,
-    { id: "countdown", className: "bg-[#f7f1e8] text-espresso" },
+    { id: "countdown", className: "bg-maroon text-ivory" },
     h(
       "div",
       { className: "reveal text-cascade py-8 text-center" },
-      h("p", { className: "countdown-heading font-label text-[0.66rem] uppercase tracking-[0.42em] text-blush" }, "Counting down to the wedding"),
+      h("p", { className: "countdown-heading font-label text-[0.66rem] uppercase tracking-[0.42em] text-gold" }, "Counting down to the wedding"),
       h(
         "div",
-        { className: "mt-8 flex items-baseline justify-center gap-1 font-display text-[3.2rem] font-normal leading-none text-maroon" },
+        { className: "mt-8 flex items-baseline justify-center gap-1.5 font-display text-[2.95rem] font-medium leading-none tracking-[0.02em] text-[#FFF9EF] drop-shadow-[0_2px_12px_rgba(20,43,32,0.18)]" },
         numbers.map((value, index) =>
           h(
             React.Fragment,
             { key: index },
-            h("span", { className: "min-w-[3.9rem] tabular-nums" }, value),
+            h("span", { className: "min-w-[3.65rem] tabular-nums" }, value),
             index < numbers.length - 1 ? h("span", { className: "text-3xl text-gold" }, ":") : null
           )
         )
@@ -350,7 +350,7 @@ function Countdown() {
         h("span", null, "Mins"),
         h("span", null, "Secs")
       ),
-      h("p", { className: "mt-12 font-label text-[0.68rem] uppercase tracking-[0.26em] text-text-mid" }, "27th June · Saturday · 8:00 PM")
+      h("p", { className: "mt-12 font-label text-[0.68rem] uppercase tracking-[0.26em] text-[#FFF9EF]" }, "27th June · Saturday · 8:00 PM")
     )
   );
 }
@@ -479,7 +479,7 @@ function Events() {
           "article",
           {
             key: event.title,
-            className: "rounded-[8px] border border-[#c9a84c]/15 border-l-2 border-l-[#c9a84c] bg-[#FAF6EF] px-7 py-8 text-left shadow-[0_18px_45px_rgba(44,24,16,0.08)]",
+            className: "rounded-[8px] border border-[#c9a84c]/15 border-l-2 border-l-[#c9a84c] bg-[#FAF6EF] px-7 py-8 text-left shadow-[0_18px_45px_rgba(20,43,32,0.08)]",
           },
           h(
             "div",
@@ -517,7 +517,7 @@ function RSVP() {
     { id: "rsvp", className: "bg-ivory text-espresso" },
     h(
       "div",
-      { className: "reveal text-cascade mx-auto max-w-3xl rounded-[8px] border border-gold/35 px-5 py-10 text-center shadow-[0_18px_55px_rgba(44,24,16,0.06)]" },
+      { className: "reveal text-cascade mx-auto max-w-3xl rounded-[8px] border border-gold/35 px-5 py-10 text-center shadow-[0_18px_55px_rgba(20,43,32,0.06)]" },
       Icon(Heart, "mx-auto text-gold", 34),
       h("h2", { className: "mt-6 font-display text-4xl font-light leading-tight text-maroon" }, "Your presence is the blessing we hope for."),
       h("p", { className: "mx-auto mt-6 max-w-2xl font-body text-lg leading-9 text-text-mid" }, "Kindly let the family know you will be joining the celebrations, so every detail may be prepared with love."),

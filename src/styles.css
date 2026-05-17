@@ -2,12 +2,12 @@
 
 :root {
   --ivory: #faf6ef;
-  --burgundy: #7a1b2a;
-  --burgundy-dk: #2c1810;
+  --burgundy: #245b3a;
+  --burgundy-dk: #142b20;
   --gold: #c9a84c;
   --gold-lt: #b8941f;
-  --blush: #9b2335;
-  --text-mid: #5a3028;
+  --blush: #3f7450;
+  --text-mid: #294438;
   color: var(--text-mid);
   background: #faf6ef;
   font-synthesis: none;
@@ -88,7 +88,7 @@ a {
 }
 
 .text-maroon\/70 {
-  color: rgba(122, 27, 42, 0.7) !important;
+  color: rgba(36, 91, 58, 0.7) !important;
 }
 
 .bg-maroon {
@@ -96,39 +96,39 @@ a {
 }
 
 .bg-maroon\/40 {
-  background-color: rgba(122, 27, 42, 0.4) !important;
+  background-color: rgba(36, 91, 58, 0.4) !important;
 }
 
 .from-maroon\/75 {
-  --tw-gradient-from: rgba(122, 27, 42, 0.75) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgba(122, 27, 42, 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: rgba(36, 91, 58, 0.75) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(36, 91, 58, 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .text-espresso\/55 {
-  color: rgba(90, 48, 40, 0.55) !important;
+  color: rgba(41, 68, 56, 0.55) !important;
 }
 
 .text-espresso\/68 {
-  color: rgba(90, 48, 40, 0.68) !important;
+  color: rgba(41, 68, 56, 0.68) !important;
 }
 
 .text-espresso\/70 {
-  color: rgba(90, 48, 40, 0.7) !important;
+  color: rgba(41, 68, 56, 0.7) !important;
 }
 
 .text-espresso\/72 {
-  color: rgba(90, 48, 40, 0.72) !important;
+  color: rgba(41, 68, 56, 0.72) !important;
 }
 
 .text-espresso\/75 {
-  color: rgba(90, 48, 40, 0.75) !important;
+  color: rgba(41, 68, 56, 0.75) !important;
 }
 
 .opening-signature {
   animation: openingSignatureReveal 2.6s cubic-bezier(0.16, 1, 0.3, 1) 1.8s both !important;
   color: var(--burgundy);
-  filter: drop-shadow(0 7px 16px rgba(122, 27, 42, 0.18));
+  filter: drop-shadow(0 7px 16px rgba(36, 91, 58, 0.18));
   position: relative;
 }
 
@@ -142,7 +142,7 @@ a {
 
 .flying-bird {
   animation: birdFlight 18s cubic-bezier(0.45, 0, 0.55, 1) infinite both;
-  filter: drop-shadow(0 8px 14px rgba(44, 24, 16, 0.14));
+  filter: drop-shadow(0 8px 14px rgba(20, 43, 32, 0.14));
   opacity: 1;
   transform: translate3d(30px, 18px, 0) scale(0.78) rotate(-4deg);
 }
@@ -399,7 +399,7 @@ a {
   inset: -1px;
   z-index: -1;
   border-radius: 999px;
-  background: conic-gradient(from 140deg, rgba(201, 168, 76, 0.2), rgba(201, 168, 76, 0.9), rgba(122, 27, 42, 0.35), rgba(201, 168, 76, 0.2));
+  background: conic-gradient(from 140deg, rgba(201, 168, 76, 0.2), rgba(201, 168, 76, 0.9), rgba(36, 91, 58, 0.35), rgba(201, 168, 76, 0.2));
   animation: ringTurn 8s linear infinite;
 }
 
@@ -563,13 +563,13 @@ a {
 @keyframes openingSignatureReveal {
   from {
     opacity: 0;
-    filter: blur(8px) drop-shadow(0 7px 16px rgba(122, 27, 42, 0.18));
+    filter: blur(8px) drop-shadow(0 7px 16px rgba(36, 91, 58, 0.18));
     transform: translateY(18px);
   }
 
   to {
     opacity: 1;
-    filter: blur(0) drop-shadow(0 7px 16px rgba(122, 27, 42, 0.18));
+    filter: blur(0) drop-shadow(0 7px 16px rgba(36, 91, 58, 0.18));
     transform: translateY(0);
   }
 }
