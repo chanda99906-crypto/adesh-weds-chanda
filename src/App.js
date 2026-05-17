@@ -15,7 +15,7 @@ const ringsTwoPhoto = new URL("./assets/couple-rings-2.jpeg", import.meta.url).h
 
 const memoryPhotos = [
   {
-    title: "Chanda & Adesh",
+    title: "Adesh & Chanda",
     caption: "The quiet joy before forever begins.",
     image: couplePhoto,
     position: "object-center",
@@ -43,14 +43,14 @@ const memoryPhotos = [
 const eventImages = [
   {
     title: "Haldi",
-    date: "26 June",
+    date: "25 June",
     time: "A morning of turmeric, laughter, and golden blessings.",
     image: haldiImage,
     offset: "pt-40",
   },
   {
     title: "Mehendi",
-    date: "26 June",
+    date: "25 June",
     time: "An evening of music, intricate henna, and stories held in every palm.",
     image: mehendiImage,
     offset: "pt-40",
@@ -67,14 +67,14 @@ const eventImages = [
 const eventDetails = [
   {
     title: "Haldi Ceremony",
-    date: "Friday, 26 June · 11:00 AM",
+    date: "Thursday, 25 June · 11:00 AM",
     address: ["B-3303 Spring View Floors, Sare Homes,", "Creasant Parc, Lal Kaun, Ghaziabad 201002"],
     accent: "gold",
     directions: "https://www.google.com/maps/search/?api=1&query=28.638583,77.480361",
   },
   {
     title: "Mehandi Evening",
-    date: "Friday, 26 June · 4:00 PM",
+    date: "Thursday, 25 June · 4:00 PM",
     address: ["B-3303 Spring View Floors, Sare Homes,", "Creasant Parc, Lal Kaun, Ghaziabad 201002"],
     accent: "gold",
     directions: "https://www.google.com/maps/search/?api=1&query=28.638583,77.480361",
@@ -177,7 +177,7 @@ function Hero() {
     { className: "relative min-h-[100svh] overflow-hidden bg-ivory text-espresso" },
     h("img", {
       src: heroImage,
-      alt: "Opening wedding monogram artwork for Chanda and Adesh",
+      alt: "Opening wedding monogram artwork for Adesh and Chanda",
       className: "opening-image absolute inset-0 h-full w-full object-cover object-center",
     }),
     h("div", { className: "absolute inset-x-0 bottom-0 h-52 bg-gradient-to-t from-ivory via-ivory/55 to-transparent" }),
@@ -199,7 +199,7 @@ function Hero() {
       h(
         "p",
         { className: "opening-signature gold-gradient-text inline-block px-2 py-2 font-signature text-4xl font-semibold leading-[1.35] tracking-wide" },
-        "Chanda & Adesh"
+        "Adesh & Chanda"
       )
     ),
     h("div", { className: "scroll-cue absolute bottom-3 left-1/2 z-10 h-10 w-px bg-gradient-to-b from-maroon/75 to-transparent" })
@@ -283,8 +283,8 @@ function InvitationDetails() {
         h(
           "div",
           null,
-          h("p", { className: "gold-gradient-text font-signature text-5xl font-semibold leading-[1.15]" }, "Chanda"),
-          h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved daughter of", h("br"), "Shri Vijay Kumar Chaurasia & Smt. Sushila Chaurasia")
+          h("p", { className: "gold-gradient-text font-signature text-5xl font-semibold leading-[1.15]" }, "Adesh"),
+          h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved son of", h("br"), "Shri Shiv Kishor Chaurasia & Smt. Maya Chaurasia")
         ),
         h(
           "div",
@@ -296,8 +296,8 @@ function InvitationDetails() {
         h(
           "div",
           null,
-          h("p", { className: "gold-gradient-text font-signature text-5xl font-semibold leading-[1.15]" }, "Adesh"),
-          h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved son of", h("br"), "Shri Shiv Kishor Chaurasia & Smt. Maya Chaurasia"),
+          h("p", { className: "gold-gradient-text font-signature text-5xl font-semibold leading-[1.15]" }, "Chanda"),
+          h("p", { className: "mt-2 font-body text-sm leading-7 text-text-mid" }, "Beloved daughter of", h("br"), "Shri Vijay Kumar Chaurasia & Smt. Sushila Chaurasia"),
           h("span", { className: "mx-auto mt-7 block h-px w-24 bg-[#c9a84c]/55" })
         )
       ),
@@ -510,7 +510,7 @@ function Events() {
 }
 
 function RSVP() {
-  const message = encodeURIComponent("Namaste, I would love to RSVP for Chanda & Adesh's wedding celebrations.");
+  const message = encodeURIComponent("Namaste, I would love to RSVP for Adesh & Chanda's wedding celebrations.");
 
   return h(
     Section,
@@ -540,7 +540,7 @@ function Footer() {
   return h(
     "footer",
     { className: "text-cascade bg-ivory px-5 py-12 text-center sm:px-8" },
-    h("p", { className: "gold-gradient-text font-signature text-4xl font-semibold leading-[1.2]" }, "Chanda & Adesh"),
+    h("p", { className: "gold-gradient-text font-signature text-4xl font-semibold leading-[1.2]" }, "Adesh & Chanda"),
     h(
       "div",
       { className: "mx-auto mt-4 flex w-44 items-center justify-center gap-3 text-gold" },
