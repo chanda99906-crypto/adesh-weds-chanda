@@ -68,16 +68,16 @@ const eventDetails = [
   {
     title: "Haldi Ceremony",
     date: "Thursday, 25 June · 11:00 AM",
-    address: ["B-3303 Spring View Floors, Sare Homes,", "Creasant Parc, Lal Kaun, Ghaziabad 201002"],
+    address: ["172/1, Arya Nagar, Block-2,", "Near Shiv Mandir, Dehradun, U.K."],
     accent: "gold",
-    directions: "https://www.google.com/maps/search/?api=1&query=28.638583,77.480361",
+    directions: "https://www.google.com/maps/search/?api=1&query=30.340556,78.063806",
   },
   {
     title: "Mehandi Evening",
     date: "Thursday, 25 June · 4:00 PM",
-    address: ["B-3303 Spring View Floors, Sare Homes,", "Creasant Parc, Lal Kaun, Ghaziabad 201002"],
+    address: ["172/1, Arya Nagar, Block-2,", "Near Shiv Mandir, Dehradun, U.K."],
     accent: "gold",
-    directions: "https://www.google.com/maps/search/?api=1&query=28.638583,77.480361",
+    directions: "https://www.google.com/maps/search/?api=1&query=30.340556,78.063806",
   },
   {
     title: "The Wedding Ceremony",
