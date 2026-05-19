@@ -80,7 +80,7 @@ const eventDetails = [
     directions: "https://www.google.com/maps/search/?api=1&query=30.340556,78.063806",
   },
   {
-    title: "The Wedding Ceremony",
+    title: "Reception",
     date: "Saturday, 27 June · 8:00 PM",
     address: ["Anand Bhavan", "4, Old Survey Rd, Karanpur,", "Dehradun, Uttarakhand 248001"],
     accent: "maroon",
