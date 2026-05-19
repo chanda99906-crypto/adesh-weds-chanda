@@ -86,6 +86,13 @@ const eventDetails = [
     accent: "maroon",
     directions: "https://share.google/md5em3FuLxj9JEs7O",
   },
+  {
+    title: "The Wedding Ceremony",
+    date: "Saturday, 27 June · 8:00 PM",
+    address: ["UK AURA by VR2H", "Main Gate, Wave City Marg, Sadiqpur, Kajipura, Ghaziabad, Uttar Pradesh 201015"],
+    accent: "maroon",
+    directions: "https://www.google.com/maps/search/?api=1&query=UK%20AURA%20by%20VR2H%20Ghaziabad",
+  },
 ];
 
 function useCountdown(targetDate) {
@@ -478,7 +485,7 @@ function Events() {
         h(
           "article",
           {
-            key: event.title,
+            key: `${event.title}-${event.address[0]}`,
             className: "rounded-[8px] border border-[#c9a84c]/15 border-l-2 border-l-[#c9a84c] bg-[#FAF6EF] px-7 py-8 text-left shadow-[0_18px_45px_rgba(20,43,32,0.08)]",
           },
           h(
