@@ -80,18 +80,18 @@ const eventDetails = [
     directions: "https://www.google.com/maps/search/?api=1&query=30.340556,78.063806",
   },
   {
-    title: "Reception",
-    date: "Saturday, 27 June · 8:00 PM",
-    address: ["Anand Bhavan", "4, Old Survey Rd, Karanpur,", "Dehradun, Uttarakhand 248001"],
-    accent: "maroon",
-    directions: "https://share.google/md5em3FuLxj9JEs7O",
-  },
-  {
     title: "The Wedding Ceremony",
     date: "Saturday, 27 June · 8:00 PM",
     address: ["UK AURA by VR2H", "Main Gate, Wave City Marg, Sadiqpur, Kajipura, Ghaziabad, Uttar Pradesh 201015"],
     accent: "maroon",
     directions: "https://www.google.com/maps/search/?api=1&query=UK%20AURA%20by%20VR2H%20Ghaziabad",
+  },
+  {
+    title: "Reception",
+    date: "Tuesday, 30 June · 8:00 PM",
+    address: ["Anand Bhavan", "4, Old Survey Rd, Karanpur,", "Dehradun, Uttarakhand 248001"],
+    accent: "maroon",
+    directions: "https://share.google/md5em3FuLxj9JEs7O",
   },
 ];
 
