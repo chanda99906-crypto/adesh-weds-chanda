@@ -68,14 +68,14 @@ const eventDetails = [
   {
     title: "Haldi Ceremony",
     date: "Thursday, 25 June · 11:00 AM",
-    address: ["172/1, Arya Nagar, Block-2,", "Near Shiv Mandir, Dehradun, U.K."],
+    address: ["172/1, Arya Nagar, Block-2, Near Shiv Mandir, Dehradun, Uttarakhand"],
     accent: "gold",
     directions: "https://www.google.com/maps/search/?api=1&query=30.340556,78.063806",
   },
   {
     title: "Mehandi Evening",
     date: "Thursday, 25 June · 4:00 PM",
-    address: ["172/1, Arya Nagar, Block-2,", "Near Shiv Mandir, Dehradun, U.K."],
+    address: ["172/1, Arya Nagar, Block-2, Near Shiv Mandir, Dehradun, Uttarakhand"],
     accent: "gold",
     directions: "https://www.google.com/maps/search/?api=1&query=30.340556,78.063806",
   },
@@ -88,8 +88,8 @@ const eventDetails = [
   },
   {
     title: "Reception",
-    date: "Tuesday, 30 June · 8:00 PM",
-    address: ["Anand Bhavan", "4, Old Survey Rd, Karanpur,", "Dehradun, Uttarakhand 248001"],
+    date: "Tuesday, 30 June 2026 · 7:00 PM",
+    address: ["Anand Bhavan", "4, Old Survey Rd, Karanpur, Dehradun, Uttarakhand 248001"],
     accent: "maroon",
     directions: "https://share.google/md5em3FuLxj9JEs7O",
   },
@@ -475,7 +475,7 @@ function Events() {
       h(
         "p",
         { className: "mx-auto mt-8 max-w-[20rem] font-body text-lg leading-8 text-ivory" },
-        "Join us where every ritual is held with grace, every blessing gathers close, and the evening turns into a memory dressed in gold."
+        "Join us as every ritual unfolds with grace, every blessing gathers close, and each celebration becomes a memory dressed in gold."
       )
     ),
     h(
@@ -517,7 +517,7 @@ function Events() {
 }
 
 function RSVP() {
-  const message = encodeURIComponent("Namaste, I would love to RSVP for Adesh & Chanda's wedding celebrations.");
+  const message = encodeURIComponent("Namaste, I would love to RSVP for Adesh & Chanda’s wedding celebrations.");
 
   return h(
     Section,
