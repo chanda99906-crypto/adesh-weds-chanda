@@ -7,6 +7,7 @@ const heroImage = new URL("./assets/opening.jpg", import.meta.url).href;
 const haldiImage = new URL("./assets/haldi-new.png", import.meta.url).href;
 const mehendiImage = new URL("./assets/mehandi-new.png", import.meta.url).href;
 const weddingImage = new URL("./assets/wedding.jpg", import.meta.url).href;
+const receptionImage = new URL("./assets/reception.png", import.meta.url).href;
 const musicTrack = new URL("./assets/music.mp3", import.meta.url).href;
 const couplePhoto = new URL("./assets/groom-couple-first.jpeg", import.meta.url).href;
 const handPhoto = new URL("./assets/couple-hand.jpeg", import.meta.url).href;
@@ -62,26 +63,33 @@ const eventImages = [
     image: weddingImage,
     offset: "pt-40",
   },
+  {
+    title: "Reception",
+    date: "30 June",
+    time: "An evening of chandeliers, blessings, and golden memories.",
+    image: receptionImage,
+    offset: "pt-40",
+  },
 ];
 
 const eventDetails = [
   {
     title: "Haldi Ceremony",
-    date: "Thursday, 25 June · 11:00 AM",
+    date: "Thursday, 25 June 2026 · 11:00 AM",
     address: ["172/1, Arya Nagar, Block-2, Near Shiv Mandir, Dehradun, Uttarakhand"],
     accent: "gold",
     directions: "https://www.google.com/maps/search/?api=1&query=30.340556,78.063806",
   },
   {
     title: "Mehandi Evening",
-    date: "Thursday, 25 June · 4:00 PM",
+    date: "Thursday, 25 June 2026 · 4:00 PM",
     address: ["172/1, Arya Nagar, Block-2, Near Shiv Mandir, Dehradun, Uttarakhand"],
     accent: "gold",
     directions: "https://www.google.com/maps/search/?api=1&query=30.340556,78.063806",
   },
   {
     title: "The Wedding Ceremony",
-    date: "Saturday, 27 June · 8:00 PM",
+    date: "Saturday, 27 June 2026 · 8:00 PM",
     address: ["UK AURA by VR2H", "Main Gate, Wave City Marg, Sadiqpur, Kajipura, Ghaziabad, Uttar Pradesh 201015"],
     accent: "maroon",
     directions: "https://www.google.com/maps/search/?api=1&query=UK%20AURA%20by%20VR2H%20Ghaziabad",
