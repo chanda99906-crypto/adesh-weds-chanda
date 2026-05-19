@@ -73,7 +73,7 @@ const eventDetails = [
     directions: "https://www.google.com/maps/search/?api=1&query=30.340556,78.063806",
   },
   {
-    title: "Mehandi Evening",
+    title: "Mehendi Evening",
     date: "Thursday, 25 June · 4:00 PM",
     address: ["172/1, Arya Nagar, Block-2,", "Near Shiv Mandir, Dehradun, U.K."],
     accent: "gold",
